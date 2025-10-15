@@ -23,9 +23,16 @@ function addTask(name){
   return newTask;
 }
 
+function toggleTask(id) {
+  const task = tasks.find(t => t.id === id);
+  if (!task) return null;
+  task.done = !task.done;
+  return task;
+}
+
 function reset() {
   tasks = [];
   nextId = 1;
 }
 
-module.exports = { getTasks, reset, addTask };
+module.exports = { getTasks, reset, toggleTask, addTask };
