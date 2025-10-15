@@ -7,3 +7,4 @@ beforeEach(() => {
 test('initial task list is empty', () => {
   expect(getTasks()).toEqual([]);
 });
+

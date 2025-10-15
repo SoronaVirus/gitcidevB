@@ -10,6 +10,8 @@ function getTasks() {
 
 function addTask(name){
 
+  const trimmedName = name.trim();
+  
   const newTask = {
   id: nextId++,
   name: trimmedName,
