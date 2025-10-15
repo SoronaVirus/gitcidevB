@@ -31,7 +31,9 @@ function toggleTask(id) {
 }
 
 function countDone() {
+
   return tasks.reduce((count, task) => count + (task.done ? 1 : 0), 0);
+  return tasks.filter(t => t.done).length;
 }
 
 function reset() {
