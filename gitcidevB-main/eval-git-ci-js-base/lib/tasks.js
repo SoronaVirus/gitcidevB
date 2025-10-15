@@ -8,6 +8,10 @@ function getTasks() {
   return tasks;
 }
 
+function toggleTask(id) {
+  return tasks[i];
+}
+
 
 function reset() {
   tasks = [];
