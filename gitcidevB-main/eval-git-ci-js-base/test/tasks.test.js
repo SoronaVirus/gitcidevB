@@ -1,4 +1,4 @@
-const { getTasks, reset, toggleTask, addTask} = require('../lib/tasks');
+const { getTasks, reset, toggleTask, addTask, countDone} = require('../lib/tasks');
 
 beforeEach(() => {
   reset();
@@ -43,3 +43,18 @@ test('toggleTask retourne null si l’id n’existe pas', () => {
   expect(result).toBeNull();
 });
 
+test('countDone returns correct number of done tasks', () => {
+  const t1 = addTask('Faire les courses');
+  const t2 = addTask('Envoyer le mail');
+  const t3 = addTask('Réviser examen');
+
+  // Simule des tâches terminées
+  t1.done = true;
+  t3.done = true;
+
+  expect(countDone()).toBe(2);
+});
+
+test('countDone handles empty task list', () => {
+  expect(countDone()).toBe(0);
+});
