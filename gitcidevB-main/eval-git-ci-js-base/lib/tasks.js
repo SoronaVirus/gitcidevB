@@ -30,9 +30,13 @@ function toggleTask(id) {
   return task;
 }
 
+function countDone() {
+  return tasks.reduce((count, task) => count + (task.done ? 1 : 0), 0);
+}
+
 function reset() {
   tasks = [];
   nextId = 1;
 }
 
-module.exports = { getTasks, reset, toggleTask, addTask };
+module.exports = { getTasks, reset, toggleTask, addTask, countDone};
