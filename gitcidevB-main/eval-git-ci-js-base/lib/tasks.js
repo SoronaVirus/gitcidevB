@@ -8,6 +8,21 @@ function getTasks() {
   return tasks;
 }
 
+function addTask(name){
+
+  const trimmedName = name.trim();
+  
+  const newTask = {
+  id: nextId++,
+  name: trimmedName,
+  done: false
+  };
+
+  tasks.push(newTask);
+
+  return newTask;
+}
+
 function toggleTask(id) {
   return tasks[id];
 }
@@ -17,4 +32,4 @@ function reset() {
   nextId = 1;
 }
 
-module.exports = { getTasks, reset, toggleTask };
+module.exports = { getTasks, reset, toggleTask, addTask };
