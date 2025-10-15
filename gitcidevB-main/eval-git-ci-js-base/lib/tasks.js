@@ -24,7 +24,10 @@ function addTask(name){
 }
 
 function toggleTask(id) {
-  return tasks[id];
+  const task = tasks.find(t => t.id === id);
+  if (!task) return null;
+  task.done = !task.done;
+  return task;
 }
 
 function reset() {

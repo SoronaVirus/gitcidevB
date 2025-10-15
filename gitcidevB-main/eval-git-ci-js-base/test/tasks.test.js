@@ -26,3 +26,20 @@ test('addTask increments id for each new task', () => {
   const t2 = addTask('Deuxième tâche');
   expect(t2.id).toBe(t1.id + 1);
 });
+
+test('toggleTask change le statut done d’une tâche existante', () => {
+  const t = addTask('Shifumi en 18');
+  expect(t.done).toBe(false);
+
+  const toggled = toggleTask(t.id);
+  expect(toggled.done).toBe(true);
+
+  const toggledAgain = toggleTask(t.id);
+  expect(toggledAgain.done).toBe(false);
+});
+
+test('toggleTask retourne null si l’id n’existe pas', () => {
+  const result = toggleTask(999);
+  expect(result).toBeNull();
+});
+
