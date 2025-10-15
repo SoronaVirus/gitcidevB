@@ -9,13 +9,12 @@ function getTasks() {
 }
 
 function toggleTask(id) {
-  return tasks[i];
+  return tasks[id];
 }
-
 
 function reset() {
   tasks = [];
   nextId = 1;
 }
 
-module.exports = { getTasks, reset };
+module.exports = { getTasks, reset, toggleTask };
