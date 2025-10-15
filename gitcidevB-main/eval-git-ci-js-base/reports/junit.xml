@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="3" failures="0" errors="0" time="0.5">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-15T12:29:58" time="0.421" tests="3">
+<testsuites name="jest tests" tests="3" failures="0" errors="0" time="0.395">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-15T12:33:42" time="0.306" tests="3">
     <testcase classname=" initial task list is empty" name=" initial task list is empty" time="0.003">
     </testcase>
     <testcase classname=" addTask adds a new task with trimmed name and done=false" name=" addTask adds a new task with trimmed name and done=false" time="0.001">
     </testcase>
-    <testcase classname=" addTask increments id for each new task" name=" addTask increments id for each new task" time="0.001">
+    <testcase classname=" addTask increments id for each new task" name=" addTask increments id for each new task" time="0">
     </testcase>
   </testsuite>
 </testsuites>
