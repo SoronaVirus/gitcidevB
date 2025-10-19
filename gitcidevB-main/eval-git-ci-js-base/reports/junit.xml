@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuites name="jest tests" tests="5" failures="0" errors="0" time="0.551">
-  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-15T12:55:25" time="0.455" tests="5">
-    <testcase classname=" initial task list is empty" name=" initial task list is empty" time="0.002">
+<testsuites name="jest tests" tests="7" failures="0" errors="0" time="0.362">
+  <testsuite name="undefined" errors="0" failures="0" skipped="0" timestamp="2025-10-15T14:30:54" time="0.267" tests="7">
+    <testcase classname=" initial task list is empty" name=" initial task list is empty" time="0.003">
     </testcase>
-    <testcase classname=" addTask adds a new task with trimmed name and done=false" name=" addTask adds a new task with trimmed name and done=false" time="0.005">
+    <testcase classname=" addTask adds a new task with trimmed name and done=false" name=" addTask adds a new task with trimmed name and done=false" time="0">
     </testcase>
-    <testcase classname=" addTask increments id for each new task" name=" addTask increments id for each new task" time="0.001">
+    <testcase classname=" addTask increments id for each new task" name=" addTask increments id for each new task" time="0">
     </testcase>
     <testcase classname=" toggleTask change le statut done d’une tâche existante" name=" toggleTask change le statut done d’une tâche existante" time="0">
     </testcase>
-    <testcase classname=" toggleTask retourne null si l’id n’existe pas" name=" toggleTask retourne null si l’id n’existe pas" time="0">
+    <testcase classname=" toggleTask retourne null si l’id n’existe pas" name=" toggleTask retourne null si l’id n’existe pas" time="0.001">
+    </testcase>
+    <testcase classname=" countDone returns correct number of done tasks" name=" countDone returns correct number of done tasks" time="0.001">
+    </testcase>
+    <testcase classname=" countDone handles empty task list" name=" countDone handles empty task list" time="0">
     </testcase>
   </testsuite>
 </testsuites>
